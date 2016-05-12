@@ -1,0 +1,22 @@
+test statements
+
+
+python closure
+(exec 'import test; c1=test.Computer(); c1.run("name"); p1=test.Program(); p1.info(); c1.can_it_run(p1)')
+(exec 'import test; s1=test.SuperComp(); s1.run("name")')
+(exec 'import test; p1=test.Program(); p1.info()')
+
+
+(exec 'import test; c1=test.Computer(); c1.run("name")')
+(exec 'import test; c1=test.Computer(); c1.run("$name")("I am a computer"); toReturn = c1.run("name")')
+
+
+javalisp
+(exec 'import pokemonparse; pokemonparse.loadData(); pokemonparse.getIDs(["Pikachu","Beedrill"])')
+(exec 'import pokemonparse; pokemonparse.loadData(); pokemonparse.getAllofType("Grass")')
+(exec 'import pokemonparse; pokemonparse.loadData(); pokemonparse.getStrong("Grass")')
+(exec 'import pokemonparse; pokemonparse.loadData(); pokemonparse.getStrongPokemons("Grass")')
+
+
+python minilisp lambda
+(FindStrongPokemon (ListLoader 'pokemon')(ListLoader 'strength')'(Grass))
