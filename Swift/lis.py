@@ -61,14 +61,6 @@ def eval(x, env=global_env):
     "Evaluate an expression in an environment."
     if isinstance(x, Symbol) and (x in env):      # variable reference
         return env.find(x)[x]
-    # elif isinstance(x, Symbol) and '"' not in x:
-    #     try:
-    #         if x in constants.keys():
-    #             return constants[x]
-    #         else:
-    #             raise Exception("use of unresolved identifier %s" % x)
-    #     except Exception as e:
-    #         raise e
     elif not isinstance(x, List):  # constant literal
         return x
 
